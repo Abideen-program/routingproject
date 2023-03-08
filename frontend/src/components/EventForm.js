@@ -1,17 +1,17 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-import classes from './EventForm.module.css';
+import classes from "./EventForm.module.css";
 
-function EventForm({ method, event }) {
+const EventForm = ({ method, event }) => {
   const navigate = useNavigate();
   function cancelHandler() {
-    navigate('..');
+    navigate("..");
   }
 
   return (
     <form className={classes.form}>
       <p>
-        <label htmlFor="title">Title</label>
+        <label htmlFor="tit/le">Title</label>
         <input id="title" type="text" name="title" required />
       </p>
       <p>
@@ -34,6 +34,6 @@ function EventForm({ method, event }) {
       </div>
     </form>
   );
-}
+};
 
 export default EventForm;

@@ -1,6 +1,6 @@
-import classes from './EventItem.module.css';
+import classes from "./EventItem.module.css";
 
-function EventItem({ event }) {
+const  EventItem = ({ event }) => {
   function startDeleteHandler() {
     // ...
   }
