@@ -23,21 +23,10 @@ const Navigation = () => {
                 className={({ isActive }) =>
                   isActive ? classes.active : undefined
                 }
-                to="/events"
+                to="events"
                 end
               >
                 EVENT
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? classes.active : undefined
-                }
-                to="/events/new"
-              >
-                NEW EVENT
               </NavLink>
             </li>
           </ul>

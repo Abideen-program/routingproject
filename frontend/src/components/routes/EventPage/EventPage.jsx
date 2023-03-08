@@ -13,7 +13,7 @@ const EventPage = () => {
         {EVENTS.map((event) => {
           return (
             <li key={event.id}>
-              <Link to={`/events/${event.id}`}>{event.title}</Link>
+              <Link to={event.id}>{event.title}</Link>
             </li>
           );
         })}
