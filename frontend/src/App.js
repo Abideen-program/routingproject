@@ -7,6 +7,7 @@ import EventDetailPage from './components/routes/EventDetailPage/EventDetailPage
 import EventPage from './components/routes/EventPage/EventPage';
 import HomePage from './components/routes/HomePage/HomePage';
 import NewEventPage from './components/routes/NewEventPage/NewEventPage';
+import ErrorPage from './components/routes/ErrorPage/ErrorPage';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     {
       path: '/', 
       element: <Navigation />,
+      errorElement: <ErrorPage />,
       children: [
         {index: true, element: <HomePage />},
         {path: '/events', element: <EventPage />},
